@@ -3,21 +3,6 @@
     box-sizing: border-box;
 }
 
-header,
-title {
-    text-align: center;
-}
-
 body {
     background-color: rgb(248, 215, 169);
-}
-
-section,
-a {
-    color: brown;
-}
-
-main,
-h1 {
-    text-align: center;
 }
