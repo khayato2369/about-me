@@ -5,6 +5,7 @@
 
 body {
     background-color: rgb(248, 215, 169);
+    font-size: 20;
 }
 
 co,
@@ -20,4 +21,5 @@ h1 {
 main,
 p {
     text-align: center;
+    line-height: 1.2;
 }
