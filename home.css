@@ -5,4 +5,41 @@
 
 body {
     text-align: center;
+    line-height: 2;
+}
+
+.globalNav {
+    width: 100%;
+    margin-top: 10;
+    background: #000000;
+}
+
+.globalNav ul {
+    padding: 10px 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.navItem {
+    border-left: 1px solid #ffffff;
+    text-align: center;
+    flex: 0 1 15%;
+}
+
+.navItem:last-of-type {
+    border-left: 1px solid #ffffff;
+}
+
+.navItem a {
+    display: block;
+    line-height: 1;
+    color: #fff;
+    text-decoration: none;
+}
+
+img {
+    position: relative;
+    top: 100px;
+    left: 0;
 }
