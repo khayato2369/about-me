@@ -12,7 +12,32 @@
     <header>
         <h1>モンスターハンターシリーズ</h1>
     </header>
+
+
     <main>
+        <span id="view_clock"></span>
+
+        <script type="text/javascript">
+            timerID = setInterval('clock()', 500);
+
+            function clock() {
+                document.getElementById("view_clock").innerHTML = getNow();
+            }
+
+            function getNow() {
+                var now = new Date();
+                var year = now.getFullYear();
+                var mon = now.getMonth() + 1;
+                var day = now.getDate();
+                var hour = now.getHours();
+                var min = now.getMinutes();
+                var sec = now.getSeconds();
+
+
+                var s = year + "年" + mon + "月" + day + "日" + hour + "時" + min + "分" + sec + "秒";
+                return s;
+            }
+        </script>
         <h2>モンスターハンターは一人でもできるし友達とも一緒にできるハンティングアクションゲームです</h2>
         <h3>モンスターハンターは何作品もありますが、僕が一番好きな作品はモンスターハンターワールド：アイスボーンです</h3>
         <section>

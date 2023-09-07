@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>滋賀県のおすすめの場所</title>
     <link rel="stylesheet" href="jiyuu2.css">
-    <link rel="stylesheet" href="./jiyuu.js">
+
 </head>
 
 <body>
@@ -14,11 +14,38 @@
         <h1>滋賀県のおすすめの場所</h1>
     </header>
     <main>
+
+
+
+        <span id="view_clock"></span>
+
+        <script type="text/javascript">
+            timerID = setInterval('clock()', 500);
+
+            function clock() {
+                document.getElementById("view_clock").innerHTML = getNow();
+            }
+
+            function getNow() {
+                var now = new Date();
+                var year = now.getFullYear();
+                var mon = now.getMonth() + 1;
+                var day = now.getDate();
+                var hour = now.getHours();
+                var min = now.getMinutes();
+                var sec = now.getSeconds();
+
+
+                var s = year + "年" + mon + "月" + day + "日" + hour + "時" + min + "分" + sec + "秒";
+                return s;
+            }
+        </script>
         <section>
             <h2>白鬚神社</h2>
             <h2>メタセコイア並木</h2>
 
             <article>
+
                 <p>白鬚神社は延命長寿などの御利益があり外国人観光客が多く訪れます。<br>神社の前に琵琶湖があり鳥居が琵琶湖に埋まっていてとても綺麗に見えます。</p>
                 <p>メタセコイア並木はメタセコイアが両側に約500本植えられた並木道です。<br>全長約2.4kmで「新・日本街路樹百景」にも選ばれていてとても綺麗です。また季節によって違う風景が見られます</p>
 
@@ -28,11 +55,17 @@
 
         <img src="../img/21601-3jinnja.jpeg" alt="白鬚神社" width="400" height="400">
         <img src="../img/22214515_m-e1634118878223.jpg" alt="メタセコイア並木" width="400" height="400">
+
+
+
+
+
     </main>
     <nav class="co">
 
         <p><a href="../index.html">HOMEに戻る</a></p>
     </nav>
+
 </body>
 
 </html>

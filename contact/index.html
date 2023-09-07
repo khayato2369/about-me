@@ -12,7 +12,33 @@
     <header>
         <h1>お問い合わせページ</h1>
     </header>
+
+
     <main>
+        <span id="view_clock"></span>
+
+        <script type="text/javascript">
+            timerID = setInterval('clock()', 500);
+
+            function clock() {
+                document.getElementById("view_clock").innerHTML = getNow();
+            }
+
+            function getNow() {
+                var now = new Date();
+                var year = now.getFullYear();
+                var mon = now.getMonth() + 1;
+                var day = now.getDate();
+                var hour = now.getHours();
+                var min = now.getMinutes();
+                var sec = now.getSeconds();
+
+
+                var s = year + "年" + mon + "月" + day + "日" + hour + "時" + min + "分" + sec + "秒";
+                return s;
+            }
+        </script>
+
         <p>お名前</p>
         <input type="text" name="userName">
 
@@ -27,6 +53,8 @@
 
             <p><a href="../index.html">HOMEに戻る</a></p>
         </nav>
+
+
 
     </main>
     <img src="../img/fqa-1024x1024.png" alt="はてなマーク" width="300" height="300">
