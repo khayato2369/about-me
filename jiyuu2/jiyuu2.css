@@ -11,3 +11,30 @@ co,
 a {
     color: brown;
 }
+
+#images {
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+    /* １つ目の要素以外は非表示にする */
+    overflow: hidden;
+}
+
+#images img {
+    /* div領域にぴったり収める */
+    min-width: 80%;
+    margin: 10%;
+}
+
+#buttons {
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+
+#buttons button {
+    display: block;
+    padding: 0.4em 1em;
+    font-size: 1.5em;
+}

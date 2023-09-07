@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>web基礎 期末課題</title>
     <link rel="stylesheet" href="./home.css">
-
 </head>
 
 <body>
@@ -24,12 +23,33 @@
                 <li class="navItem"><a href="./contact/index.html">お問い合わせページ</a></li>
             </ul>
         </nav>
+        <span id="view_time"></span>
+
+        <script type="text/javascript">
+            document.getElementById("view_time").innerHTML = getNow();
+
+            function getNow() {
+                var now = new Date();
+                var year = now.getFullYear();
+                var mon = now.getMonth() + 1;
+                var day = now.getDate();
+                var hour = now.getHours();
+                var min = now.getMinutes();
+                var sec = now.getSeconds();
+
+
+                var s = year + "年" + mon + "月" + day + "日" + hour + "時" + min + "分" + sec + "秒";
+                return s;
+            }
+        </script>
+        <p>↑あなたがこのページを開いた時の時間</p>
         <div>
             <img src="./img/imageshikonyan.jpeg" alt="ひこにゃんの絵" width="200" height="300">
             <img src="./img/ave.jpg" alt="家の絵" width="300" height="300">
 
         </div>
     </main>
+
 
 
 </body>
