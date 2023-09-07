@@ -23,10 +23,14 @@
                 <li class="navItem"><a href="./contact/index.html">お問い合わせページ</a></li>
             </ul>
         </nav>
-        <span id="view_time"></span>
+        <span id="view_clock"></span>
 
         <script type="text/javascript">
-            document.getElementById("view_time").innerHTML = getNow();
+            timerID = setInterval('clock()', 500); //0.5秒毎にclock()を実行
+
+            function clock() {
+                document.getElementById("view_clock").innerHTML = getNow();
+            }
 
             function getNow() {
                 var now = new Date();
@@ -42,7 +46,7 @@
                 return s;
             }
         </script>
-        <p>↑あなたがこのページを開いた時の時間</p>
+        <p>↑現在時刻</p>
         <div>
             <img src="./img/imageshikonyan.jpeg" alt="ひこにゃんの絵" width="200" height="300">
             <img src="./img/ave.jpg" alt="家の絵" width="300" height="300">
